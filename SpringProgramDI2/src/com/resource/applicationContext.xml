@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.bean.Address" id="addId">
+    <constructor-arg value="162"></constructor-arg>
+    <constructor-arg value="kmm"></constructor-arg>
+    </bean>
+    
+    <bean class="com.bean.Student" id="stdId">
+    <constructor-arg value="naseer"></constructor-arg>
+    <constructor-arg value="22"></constructor-arg>
+    <constructor-arg ref="addId"></constructor-arg>
+    </bean>
+
+</beans>

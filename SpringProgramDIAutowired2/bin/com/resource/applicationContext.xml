@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.bean.Address" id="address">
+    <property name="hno" value="162"></property>
+    <property name="city" value="khammam"></property>
+    </bean>
+    
+    <bean class="com.bean.Student" id="stdId" autowire="byName">
+    <property name="name" value="naseer"></property>
+    <property name="roll" value="21"></property>
+
+    </bean>
+
+</beans>
